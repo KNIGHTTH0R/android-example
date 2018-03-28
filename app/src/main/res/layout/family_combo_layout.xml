@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/familycombo_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Origin"
+        android:inputType="text"
+        android:text="PAR" />
+
+    <EditText
+        android:id="@+id/familycombo_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Currency"
+        android:inputType="text"
+        android:text="BOS" />
+
+
+    <EditText
+        android:id="@+id/familycombo_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date,Date"
+        android:inputType="text"
+        android:text="2018-02-25" />
+
+    <EditText
+        android:id="@+id/familycombo_adults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="adults"
+        android:inputType="text"
+        android:text="2" />
+
+    <EditText
+        android:id="@+id/familycombo_children"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="childrens"
+        android:inputType="text"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/find_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Flights" />
+
+
+</LinearLayout>

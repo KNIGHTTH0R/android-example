@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/plain_text_ammount"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:text="500"
+            android:hint="Budget"/>
+
+        <EditText
+            android:id="@+id/plain_text_origin"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:text="PAR"
+            android:hint="Origin"/>
+
+        <EditText
+            android:id="@+id/plain_text_dates"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:text="2018-02-01,2018-02-28"
+            android:hint="Date,Date"/>
+        <EditText
+            android:id="@+id/plain_text_moneda"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:text="USD"
+            android:hint="Currency"/>
+    <Button
+        android:id="@+id/find_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Flights"/>
+
+
+    </LinearLayout>
