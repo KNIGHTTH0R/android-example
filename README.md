@@ -1,5 +1,5 @@
 
-![Amadeus for Developers](https://github.com/amadeus4dev/developer-guides/tree/master/images/logo.png)
+![Amadeus for Developers](https://raw.githubusercontent.com/amadeus4dev/developer-guides/master/images/logo.png)
 
 # Amadeus for Developers Android Example
 
@@ -17,7 +17,7 @@ If you are compiling from console (OSX and Linux), open and edit the
 For example:
 
 ```
-sdk.dir=/usr/local/Caskroom/android-sdk/3859397/
+sdk.dir=/home/user/android-sdk
 ```
 
 Let's compile the project on debug mode:
@@ -28,7 +28,8 @@ $ ./gradlew assembleDebug
 
 ## Testing
 
-In order to test the application we will use the android emulator shipped with the android SDK. 
+In order to test the application we will use the android emulator shipped with
+the android SDK. 
 
 First of all, we need to create an android virtual device (AVD). It's basically
 an emulator configuration that allows developers to test the application by
@@ -36,16 +37,17 @@ simulating the real device capabilities. We can configure the AVD by specifying
 the hardware and software options
 
 ```console
-$ avdmanager create avd --force --name testAVD --abi google_apis/x86_64 --package 'system-images;android-26;google_apis;x86_64'
+$ avdmanager create avd --force --name testAVD \
+                        --abi google_apis/x86_64 \
+                        --package 'system-images;android-26;google_apis;x86_64'
 $ avdmanager list avd
 ```
 
 Finally go to your `sdk` folder and run the emulator. For example:
 
 ```console
-$ cd /usr/local/Caskroom/android-sdk/3859397/
+$ cd ~/android-sdk/emulator
 $ ./emulator -avd list
-$ ./emulator -avd testAVD
 
 Available Android targets:
 ----------
@@ -59,10 +61,11 @@ Available Android Virtual Devices:
 Start the emulation of our new virtual device:
 
 ```console
-$ emulator -avd testAVD -skin 1440x2560
+$ ./emulator -avd testAVD -skin 1440x2560
 ```
 
-Open a new terminal, switch to your application folder and install the package on the running emulator instance:
+Open a new terminal, switch to your application source code folder and install
+the package on the running emulator instance:
 
 ```console
 $ ./gradlew installDebug
